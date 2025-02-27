@@ -1,53 +1,87 @@
-# Academic Project Page Template
-This is an academic paper project page template.
+# FaceGest: A Comprehensive Facial Gesture Dataset for Human-Computer Interaction
+
+![FaceGest Banner](assets/banner.png)
+
+## Overview
+**FaceGest** is a novel dataset designed for advancing research in **facial gesture recognition** for **Human-Computer Interaction (HCI)**. It includes a diverse collection of facial expressions, micro-expressions, and head movements captured in various lighting conditions and backgrounds, enabling robust model training and evaluation.
+
+## Key Features
+- **Diverse Expressions:** Includes a wide range of facial gestures (smiles, frowns, eyebrow raises, head nods, etc.).
+- **High-Quality Annotations:** Carefully labeled with timestamps and expression categories.
+- **Multi-Modal Data:** Contains RGB videos, depth maps, and landmark annotations.
+- **Realistic Scenarios:** Captured in different lighting conditions and perspectives.
+
+## Dataset Access
+To request access to the dataset, please fill out the following form:
+
+[Request FaceGest Dataset](https://example.com/request-form)
+
+Once your request is approved, you will receive download instructions via email.
+
+## Dataset Structure
+The dataset is organized as follows:
+```
+FaceGest/
+├── videos/              # Raw video recordings
+├── images/              # Extracted keyframes
+├── annotations/         # Facial landmarks and expression labels
+├── depth/               # Depth maps (if available)
+├── metadata/            # Subject details and conditions
+└── README.md            # Project documentation
+```
+
+## Usage
+### 1. Install Dependencies
+Ensure you have the required libraries installed:
+```bash
+pip install opencv-python numpy pandas mediapipe
+```
+
+### 2. Load and Visualize Samples
+```python
+import cv2
+import numpy as np
+
+# Load a sample video
+video_path = 'videos/sample.mp4'
+cap = cv2.VideoCapture(video_path)
+
+while cap.isOpened():
+    ret, frame = cap.read()
+    if not ret:
+        break
+    cv2.imshow('FaceGest Sample', frame)
+    if cv2.waitKey(25) & 0xFF == ord('q'):
+        break
+cap.release()
+cv2.destroyAllWindows()
+```
+
+## Benchmark Results
+We evaluated FaceGest using the following models:
+
+| Model        | Accuracy (%) | Precision (%) | Recall (%) |
+|-------------|------------|--------------|------------|
+| **Mediapipe**  | XX.XX      | XX.XX        | XX.XX      |
+| **InceptionV4**| XX.XX      | XX.XX        | XX.XX      |
+| **SqueezeNet** | XX.XX      | XX.XX        | XX.XX      |
 
 
-Example project pages built using this template are:
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
+## Applications
+- **Human-Computer Interaction (HCI)**
+- **Emotion Recognition**
+- **Gesture-Based UI/UX Design**
+- **Assistive Technologies**
+- **Affective Computing**
 
+## Citation
+If you use **FaceGest** in your research, please cite:
+```
+@inproceedings{YourName2025FaceGest,
+  author    = {Your Name and Collaborators},
+  title     = {FaceGest: A Comprehensive Facial Gesture Dataset for Human-Computer Interaction},
+  booktitle = {conference},
+  year      = {2025}
+}
+```
 
-
-## Start using the template
-To start using the template click on `Use this Template`.
-
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
-
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
-
-## Components
-- Teaser video
-- Images Carousel
-- Youtube embedding
-- Video Carousel
-- PDF Poster
-- Bibtex citation
-
-## Tips:
-- The `index.html` file contains comments instructing you what to replace, you should follow these comments.
-- The `meta` tags in the `index.html` file are used to provide metadata about your paper 
-(e.g. helping search engine index the website, showing a preview image when sharing the website, etc.)
-- The resolution of images and videos can usually be around 1920-2048, there rarely a need for better resolution that take longer to load. 
-- All the images and videos you use should be compressed to allow for fast loading of the website (and thus better indexing by search engines). For images, you can use [TinyPNG](https://tinypng.com), for videos you can need to find the tradeoff between size and quality.
-- When using large video files (larger than 10MB), it's better to use youtube for hosting the video as serving the video from the website can take time.
-- Using a tracker can help you analyze the traffic and see where users came from. [statcounter](https://statcounter.com) is a free, easy to use tracker that takes under 5 minutes to set up. 
-- This project page can also be made into a github pages website.
-- Replace the favicon to one of your choosing (the default one is of the Hebrew University). 
-- Suggestions, improvements and comments are welcome, simply open an issue or contact me. You can find my contact information at [https://horwitz.ai](https://horwitz.ai)
-
-## Acknowledgments
-Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
-
-## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
