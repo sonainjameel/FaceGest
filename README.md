@@ -1,6 +1,6 @@
 # FaceGest: A Comprehensive Facial Gesture Dataset for Human-Computer Interaction
 
-![FaceGest Banner](assets/dataset.png)
+![FaceGest Banner](asset/dataset.png)
 
 ## Overview
 **FaceGest** is a novel dataset designed for advancing research in **facial gesture recognition** for **Human-Computer Interaction (HCI)**. It includes a diverse collection of facial expressions, micro-expressions, and head movements captured in various lighting conditions and backgrounds, enabling robust model training and evaluation.
