@@ -34,10 +34,14 @@ FaceGest/
 ### 1. Install Dependencies
 Ensure you have the required libraries installed:
 ```bash
-pip install opencv-python numpy pandas mediapipe
+pip install tensorflow opencv-python numpy pandas mediapipe
+```
+### 2. Download and Load FaceGest
+```bash
+pip install face-gest-loader
 ```
 
-### 2. Load and Visualize Samples
+### 3. Load and Visualize Samples
 ```python
 import cv2
 import numpy as np
