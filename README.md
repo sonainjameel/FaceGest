@@ -43,7 +43,6 @@ pip install face-gest-loader
 ### 3. Load and Visualize Samples (Deep Features Mediapipe-based)
 ```bash
 from face_gest_loader import load_face_gest
-import pandas as pd
 
 df  = load_face_gest("Deep-Features-Mediapipe")
 print(df)
@@ -51,7 +50,6 @@ print(df)
 ### 4. Load and Visualize Samples (Deep Features SqueezeNet-based)
 ```bash
 from face_gest_loader import load_face_gest
-import pandas as pd
 
 df  = load_face_gest("Deep-Features-SqueezeNet")
 print(df)
@@ -59,7 +57,6 @@ print(df)
 ### 5. Load and Visualize Samples (Deep Features Inception-based)
 ```bash
 from face_gest_loader import load_face_gest
-import pandas as pd
 
 df  = load_face_gest("Deep-Features-Inception")
 print(df)
