@@ -66,7 +66,10 @@ df  = load_face_gest("Deep-Features-Inception")
 print(df)
 ```
 ### 6. Watch Video Tutorial for (Downloading and Loading FaceGest)
-![Download and Load FaceGest](asset/Installation of FaceGestLibrary.mp4)
+![Download and Load FaceGest](asset/install.gif)
+
+### 7. Watch Video Tutorial for (Using FaceGest)
+![Download and Load FaceGest](asset/usage.gif)
 
 ## Benchmark Results
 We evaluated FaceGest using the following models:
