@@ -40,27 +40,30 @@ pip install tensorflow opencv-python numpy pandas mediapipe
 ```bash
 pip install face-gest-loader
 ```
+### 3. Load and Visualize Samples (Deep Features Mediapipe-based)
+```bash
+from face_gest_loader import load_face_gest
+import pandas as pd
 
-### 3. Load and Visualize Samples
-```python
-import cv2
-import numpy as np
-
-# Load a sample video
-video_path = 'videos/sample.mp4'
-cap = cv2.VideoCapture(video_path)
-
-while cap.isOpened():
-    ret, frame = cap.read()
-    if not ret:
-        break
-    cv2.imshow('FaceGest Sample', frame)
-    if cv2.waitKey(25) & 0xFF == ord('q'):
-        break
-cap.release()
-cv2.destroyAllWindows()
+df  = load_face_gest("Deep-Features-Mediapipe")
+print(df)
 ```
+### 4. Load and Visualize Samples (Deep Features SqueezeNet-based)
+```bash
+from face_gest_loader import load_face_gest
+import pandas as pd
 
+df  = load_face_gest("Deep-Features-SqueezeNet")
+print(df)
+```
+### 5. Load and Visualize Samples (Deep Features Inception-based)
+```bash
+from face_gest_loader import load_face_gest
+import pandas as pd
+
+df  = load_face_gest("Deep-Features-Inception")
+print(df)
+```
 ## Benchmark Results
 We evaluated FaceGest using the following models:
 
