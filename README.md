@@ -12,8 +12,12 @@
 - **Realistic Scenarios:** Captured in different lighting conditions and perspectives.
 
 ## Dataset Access
-To request access to the dataset, please fill out the following form:
+This dataset has three forms. 1) Deep Features-Based 2) Depth-Maps 3) RGB Labeled Videos
+For 1) Deep Feautres-Based Version, install "face-gest-library" using "pip" as shown in the following sections. 
+Also watch video tutroials given at the end, in case of difficulty.
 
+For 2) Depth-Maps 3) RGB Labeled Videos
+A request can be made to the authors, please fill out the following form:
 [Request FaceGest Dataset](https://example.com/request-form)
 
 Once your request is approved, you will receive download instructions via email.
