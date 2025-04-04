@@ -29,7 +29,7 @@ FaceGest/
 ├── videos/              # Raw video recordings
 ├── images/              # Extracted keyframes
 ├── annotations/         # Facial landmarks and expression labels
-├── depth/               # Depth maps (if available)
+├── depth/               # Depth maps 
 ├── metadata/            # Subject details and conditions
 └── README.md            # Project documentation
 ```
