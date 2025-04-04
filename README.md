@@ -91,8 +91,8 @@ We evaluated FaceGest using the following models:
 ## Citation
 If you use **FaceGest** in your research, please cite:
 ```
-@inproceedings{YourName2025FaceGest,
-  author    = {Your Name and Collaborators},
+@inproceedings{Yaseen2025FaceGest,
+  author    = {Yaseen and Sonain amil},
   title     = {FaceGest: A Comprehensive Facial Gesture Dataset for Human-Computer Interaction},
   booktitle = {conference},
   year      = {2025}
