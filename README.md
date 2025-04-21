@@ -94,7 +94,7 @@ If you use **FaceGest** in your research, please cite:
 @inproceedings{Yaseen2025FaceGest,
   author    = {Yaseen and Sonain Jamil},
   title     = {FaceGest: A Comprehensive Facial Gesture Dataset for Human-Computer Interaction},
-  booktitle = {conference},
+  booktitle = {CVPRW},
   year      = {2025}
 }
 ```
